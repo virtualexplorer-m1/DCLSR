@@ -1308,8 +1308,8 @@ class NeuralClusteringAttention(nn.Module):
         cluster_scores = self.cluster_proj(X)  # (B, T, num_clusters)
         cluster_assignments = torch.argmax(cluster_scores, dim=-1)  # (B, T)
 
-        attended_outputs = torch.zeros_like(X)
 
+        attended_outputs = torch.zeros_like(X)
         # 遍历每个簇，利用同一聚类结果进行注意力计算
         for cluster_idx in range(self.num_clusters):
             # mask: (B, T)，True 表示该 token 属于当前簇

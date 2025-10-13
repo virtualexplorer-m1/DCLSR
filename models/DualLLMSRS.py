@@ -292,7 +292,7 @@ class DualLLMBert4Rec(Bert4Rec):
 
         diffllm_seqs = self.noisef(llm_seqs)
 
-        llm_features_emb = self.cluster_att_1(llm_seqs)  # (1, N, 64)
+        llm_features_emb = self.cluster_att_1(llm_seqs)  # (B, N, 64)
         # print(f'llm_features_emb:{llm_features_emb}')
         self.elbo.update_cluster(llm_features_emb)
         loss_ccl = self.elbo(llm_features_emb, llm_seqs)
