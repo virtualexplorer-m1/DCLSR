@@ -3,14 +3,14 @@
 seed_list=(3407)
 alpha_list=(  0.025)
 kappa_list=( 0.01 0.05)
-tau_list=(  0.2 0.5 0.25 0.15)
+tau_list=(  0.2 )
 eta_list=(0.05 )
 num_list=(   20 )
 num_heads_list=(1)
-num_cluster_list=(20  12   24  10 15  14 )
-rate_list=(0.75  0.85  0.725  0.8 0.825  )
-ccal_list=(0.02   0.001  )
-cluster_num_list=(  20   15  12  )
+num_cluster_list=(20 )
+rate_list=(0.75  0.85  )
+ccal_list=(0.02    )
+cluster_num_list=(  20    )
 
 dataset="yelp"
 gpu_id=1

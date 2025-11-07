@@ -28,7 +28,7 @@ class EarlyStopping():
         """
         if not os.path.exists(path):
             os.makedirs(path)
-
+        # patience
         self.patience = patience
         self.verbose = verbose
         self.counter = 0
